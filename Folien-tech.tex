@@ -1,0 +1,40 @@
+%ohne [handout] kommen die Overlays
+%\documentclass[handout]{beamer}
+\documentclass{beamer}
+\input{packages}
+%Seiten Druckergerecht:
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{resize to}[a4paper,border shrink=5mm,landscape]
+\input{titlepage}
+
+\subject{\input{subject}}
+\keywords{\input{keywords}}
+
+\setcounter{tocdepth}{1}
+
+%Berkeley, Antibes, Warsaw
+\usetheme{Frankfurt}
+%\setbeamertemplate{navigation symbols}{}
+%\usecolortheme{seahorse}
+%\usecolortheme{rose}
+
+\date{\today}
+
+%\setcounter{tocdepth}{1}
+
+\defbeamertemplate*{footline}{infolines theme}{%
+ \hspace*{2ex}\raisebox{1.5ex}[-1.5ex]{%
+ \color{gray}\tiny\insertframenumber{}/\inserttotalframenumber}\color{black}%
+}% footline
+
+\begin{document}
+\frame[plain]{\titlepage}
+
+\frame{
+%Auch ins Handout
+  \tableofcontents
+}
+
+
+
+\end{document}
