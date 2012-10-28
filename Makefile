@@ -10,9 +10,9 @@ folinc = $(mininc) titlepage.tex
 
 # Targets: Hilfe, alles, Ausarbeitung, Folien und Preprocessing
 help:	
-	@echo 'make [all|nt|tech|Folien|clean|distclean]'
+	@echo 'make [all|nt|recht|tech|Folien|clean|distclean]'
 
-all:	$+ nt tech Folien
+all:	$+ nt recht tech Folien
 
 # foo.pre -> foo.tex
 $(preproc): %.tex: %.pre
@@ -21,6 +21,9 @@ $(preproc): %.tex: %.pre
 nt:
 	pdflatex Folien-nontech.tex
 	pdflatex Folien-nontech.tex
+recht:
+	pdflatex Folien-rechtliches.tex
+	pdflatex Folien-rechtliches.tex
 tech:
 	pdflatex Folien-tech.tex
 	pdflatex Folien-tech.tex
