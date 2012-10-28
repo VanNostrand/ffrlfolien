@@ -1,0 +1,235 @@
+%ohne [handout] kommen die Overlays
+%\documentclass[handout]{beamer}
+\documentclass{beamer}
+\input{packages}
+\usepackage{eurosym}
+%Seiten Druckergerecht:
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{resize to}[a4paper,border shrink=5mm,landscape]
+
+\title{Freifunk}
+\subtitle{und das Abmahnwesen}
+\author{Freifunk Rheinland e.V.\\(Funkzelle Aachen)}
+\date{\today}
+
+
+\subject{\input{subject}}
+\keywords{\input{keywords}}
+
+\setcounter{tocdepth}{1}
+
+%Berkeley, Antibes, Warsaw
+\usetheme{EastLansing}
+%\setbeamertemplate{navigation symbols}{}
+%\usecolortheme{seahorse}
+%\usecolortheme{rose}
+
+\date{\today}
+
+%\setcounter{tocdepth}{1}
+
+% \defbeamertemplate*{footline}{infolines theme}{%
+%  \hspace*{2ex}\raisebox{1.5ex}[-1.5ex]{%
+%  \color{gray}\tiny\insertframenumber{}/\inserttotalframenumber}\color{black}%
+% }% footline
+
+\begin{document}
+\frame[plain]{\titlepage}
+
+\frame{
+\frametitle{Vortragsinhalt}
+\framesubtitle{Gesamtdauer etwa 60 Minuten}
+  \tableofcontents
+}
+
+\frame{
+\frametitle{Hinweise}
+\begin{block}{Hintergrund und Warnung bzgl. Vortrag/Folien}
+\begin{itemize}
+ \item Stand: Deutsches Recht 2012
+ \item Technische Umstände: Freifunk Rheinland Firmware 2012.
+ \item Folien wurden von juristischem Laien aus Erinnerungen an ein Gespräch über eine Abmahnung mit einem Fachanwalt (IT-Recht, Abmahnungsrecht, \dots) verfasst.
+ \item Vortrag und Folien stellen keine juristische, individuelle Beratung dar!
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Allgemeingültiger Rat}
+\centering
+\begin{framed}
+\color{red}\textbf{Beratung eines Fachanwalts/Juristen IT-Recht/Abmahnrecht einholen.}
+\end{framed}
+\end{block}
+}
+
+\section{Inhalt von Abmahnungen}
+\frame{
+\frametitle{Inhalt von Abmahnungen}
+\begin{block}{Abmahnungsschreiben}
+\begin{itemize}
+ \item Detaillierter Grund (z.B. Urheberrecht, Werk, Datum etc).
+ \item Viel einschüchternder Text über Streitwert (10.000 \euro, \dots), Strafzahlungen, Geld, Geld, Geld!1!! [tl;dr]
+ \item Angebot außergerichtlicher Einigung mit Frist (paar hundert Euro).
+ \item Angehängte Unterlassungserklärung (\textit{impliziert Schuld}), mit Frist.
+ \item Vollmacht des Auftraggebers/Urheberrechtsinhabers.
+\end{itemize}
+\end{block}
+}
+
+\section{Verhalten bei Abmahnungen}
+\frame{
+\frametitle{Verhalten bei Abmahnungen}
+\begin{block}{Empfehlung}
+\begin{itemize}
+ \item Keine Panik, nicht überstürzt handeln! (schwer)
+ \item Internettips und Pressemitteilungen mitunter falsch!
+ \item Rechtzeitig \textbf{eigenen Anwalt nehmen!}\\Bei sehr knappen Fristen ($\leq2$ Tage): Notfalltelefonnummer.
+\end{itemize}
+\end{block}
+\pause
+\begin{block}{Bei Unschuld}
+\begin{itemize}
+ \item Vom Anwalt erstellte, \textit{modifizierte} Unterlassungserklärung abschicken (Einwurfeinschreiben)
+ \item Kopie und Postquittung sammeln, mindestens 30 Jahre!
+ \item Ursache beheben: Bei erneutem Vorfall Strafzahlung.
+ \item Entweder
+ \begin{enumerate}
+  \item Klage abwarten (Glücksspiel!)
+  \item Preis von Anwalt aushandeln lassen (etwa 50\%)
+ \end{enumerate}
+\end{itemize}
+\end{block}
+}
+
+\section{Abmahnen statt Klagen?}
+\frame{
+\frametitle{Abmahnen statt Klagen?}
+\begin{block}{Warum abmahnen, statt sofort klagen?}
+\begin{itemize}
+ \item Etwa 400 \euro{} pro Anklage vorzahlen (Gericht, eigene Anwälte).
+ \item Für \textit{Massen}abmahnung summiert sich das.
+ \item Umfang der Schuld/Entschädigung nicht bekannt.
+ \item Zahlungsfähigkeit des Angeklagten nicht bekannt.
+ \item Kanzleien verhalten sich unterschiedlich.
+\end{itemize}
+\end{block}
+ \pause
+\begin{block}{Folgerung}
+ Bei kleinen Auftraggebern seltener, aber \textit{nicht ausgeschlossen}.
+\end{block}
+}
+
+\section{Situation vor Gericht}
+\frame{
+\frametitle{Situation vor Gericht}
+\begin{block}{Urheberrechtsklage}
+\begin{itemize}
+ \item Gerichtsstand fliegend (\textit{Hamburg}, Berlin, München, \dots)
+ \item Anordnung \textit{persönlicher} Anwesenheit (Zeit, Reisekosten, +Anwalt).
+ \item Mit 100-$\varepsilon$\% Wahrscheinlichkeit verlieren:
+ \pause
+\begin{itemize}[<+-|alert@+>]
+ \item Schnüffler zertifiziert und beglaubigt.
+ \item Fehlerquote nach Gutachten: \textperthousand{}.
+ \item Fehler in Anklagegrundlage muss \textit{Angeklagter beweisen}.
+ \item Sonstige Gegenargumente: \glqq Schutzbehauptung\grqq $\Rightarrow$ keine Wirkung.
+ \item Gerichte überlastet, Textbausteinurteile.
+ \item Störerhaftung: Mindestens Teilschuld.
+ \item Richter sind niemandem verpflichtet, auch keinen Präzedenzfällen, BGH-Urteilen etc. (Unabhängigkeit nach Gewaltenteilung)
+\end{itemize}
+\end{itemize}
+\end{block}
+}
+
+\section{Häufige Vorschläge -- Warum sie ungeeignet sind.}
+\frame{
+\frametitle{Häufige Vorschläge}
+\framesubtitle{Warum sie ungeeignet sind.}
+\begin{block}{1/2}
+\begin{description}[<+-|alert@+>]
+ \item[$\bullet$] Modifizierte Unterlassung aus dem Inet abschicken.
+ \item[$\circ$] Kann inhaltlich formell falsch sein, impliziert außerdem Klageabwartung.
+ \item[$\bullet$] Vereinsanwalt fragen, pro bono.
+ \item[$\circ$] Name? Standort? Pro bono auch für Preisverhandlung oder Gericht und bei vielen Abmahnungen?
+ \item[$\bullet$] Kriegskasse des Vereins.
+ \item[$\circ$] Kapazität? Auch bei eventueller Nichtmitgliedschaft?
+ \item[$\bullet$] Spenden sammeln.
+ \item[$\circ$] Keine Gewissheit, auch nur ein Verfahren abzudecken, geschweige mehr Instanzen. Aufwand?
+\end{description}
+\end{block}
+}
+
+\frame{
+\frametitle{Häufige Vorschläge}
+\begin{block}{2/2}
+\begin{description}[<+-|alert@+>]
+ \item[$\bullet$] Präzedenzfall schaffen.
+ \item[$\circ$] Richter sind unabhängig. Folgeklagen müssen ggf. durch Instanzen und haben keine Garantien.
+ \item[$\bullet$] Der Verein wurde dafür gegründet (den Kopf hinzuhalten).
+ \item[$\circ$] Der Verein ist niemals betroffen, solange der Anschluss einer Privatperson gehört. Mindestens die Störerhaftung bleibt.
+ \item[$\bullet$] Firmware besitzt Filter.
+ \item[$\circ$] Nicht so wirksam/up-to-date/leistungsfähig wie Systeme mit kommerziellem Support (IPOQUE), aber auch diese sind umgehbar, wie jedes menschengeschaffene System.
+ \item[$\bullet$] BGH 2010: Nur Unterlassung und maximal 100 \euro.
+ \item[$\circ$] Diese Pressemeldung ist \textit{falsch}, sie weicht zentral vom wirklichen Urteil ab, wird aber überall so verbreitet.
+\end{description}
+\end{block}
+} 
+
+\section{Lösungsideen zu aktueller Gesetzeslage}
+\frame{
+\frametitle{Lösungsideen zu aktueller Gesetzeslage}
+\begin{block}{}
+\begin{itemize}[<+-|alert@+>]
+ \item Gesetze ändern
+ \begin{itemize}
+  \item Kosten und Risiken für Verbraucher senken.
+  \item Mindestens die Störerhaftung bearbeiten.
+  \item Abmahnwesen betrachten.
+  \item Gerichte entlasten!
+  \item Erfolg? Große Parteien: Medienlobby. Kleine Parteien: wenig Einfluss.
+ \end{itemize}
+ \item Nichts darf zum Anschluss des Freifunkers führen.
+ \begin{itemize}
+  \item Vereinsproxy/-VPN bisher am besten, weil dann der Verein als juristische Person angegriffen wird. Die technische Umsetzung fehlt aber. Im Worstcase trifft es \textit{trotzdem} das Vereinsmitglied, über dessen Anschluss es geschehen ist (Logauswertung des Proxy).
+  \item Auslands-VPN: keine echte Garantie, dass die keine Verbindungsdaten haben und herausgeben: Juristischer Druck+Wandel? Leaks? Bestechung bei VPN in Bananenrepublik? \dots?
+ \end{itemize}
+\end{itemize}
+\end{block}
+}
+
+\frame{
+\frametitle{Weitere Lösungen}
+\begin{block}{}
+\begin{itemize}
+ \item Nur Mitgliedern Zugang erlauben, sie verpflichten sich, keinen Unfug anzustellen und werden zentral authentifiziert (VPN, LDAP, Radius). Weicht je nach Auslegung von Freifunkidee ab.
+ \item Geschäftsmodell muss bedroht sein. Verein müsste 1 Cent für die Nutzung nehmen, ist aber gemeinnützig. Weicht prinzipiell auch von der Freifunkidee ab.
+ \item Schlechteste: Alles so belassen, weiter auf einen \glqq Präzedenzfall\grqq{} (auf wessen Rücken?) warten.
+\end{itemize}
+\end{block}
+}
+
+\section{Vortragsende, Zusammenfassung}
+\frame{
+\frametitle{Vortragsende, Zusammenfassung}
+\framesubtitle{Vielen Dank fürs Zuhören!}
+\begin{block}{Zusammenfassung}
+\begin{itemize}
+ \item Ziel von Abmahnungen: Geld, nicht Recht.
+ \item Betroffen ist z.Z. nicht der Verein, sondern der Anschlussinhaber.
+ \item Keinen Internettips/Presseberichten folgen!
+ \item Umsonst kommt man nur durch \textit{Glücksspiel} heraus.
+ \item Häufig zitierte Vorschläge sind unpraktikabel.
+ \item Lösungen sind semi-befriedigend.
+\end{itemize}
+\end{block}
+
+\begin{block}{Fragen, Diskussion?}
+\end{block}
+
+\begin{block}{Folien:}
+\centering
+\url{https://github.com/VanNostrand}
+\end{block}
+
+}
+
+\end{document}
